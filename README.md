@@ -13,11 +13,12 @@ Identified Sex and Pclass as primary drivers of survival.
 
 3. Feature Engineering
 Engineered predictive features that boosted model performance:
-FamilySize, IsAlone, Title (extracted from Name)
-One-hot encoding for all categorical variables
+FamilySize, IsAlone.
+One-hot encoding for all categorical variables.
+Normalized using StandardScaler to improve model interpretation.
 These features allowed models to capture nonlinear relationships and social structure.
 
-4. Model Training
+5. Model Training
 Implemented and compared multiple ML algorithms:
 Logistic Regression
 Decision Tree
@@ -28,7 +29,7 @@ XGBoost
 Voting Classifier (ensemble of best models)
 Used GridSearchCV for hyperparameter tuning and cross-validation.
 
-5. Model Evaluation
+6. Model Evaluation
 Evaluated models using:
 Accuracy
 Precision, Recall
@@ -36,10 +37,10 @@ F1 Score
 Cross-validated performance
 Random Forest and XGBoost consistently performed best, with VotingClassifier improving robustness.
 
-6. Reproducible Pipeline (separate file)
+7. Reproducible Pipeline (separate file)
 End-to-end pipeline using scikit-learn
 Clean separation of preprocessing, modeling, and evaluation
 Exportable predictions & ready for deployment or Kaggle submission
 
-7. Results
+8. Results
 Achieved an accuracy of 79%.
